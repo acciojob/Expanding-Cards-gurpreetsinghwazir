@@ -1,1 +1,21 @@
-/*  your css code here. If applicable */
+.container{
+	display: flex;
+	flex-direction: row;
+
+}
+.panel img{
+	border-radius: 30px;
+}
+h3{
+	position: absolute;
+	color:white;
+	margin: 25px;
+  
+  
+}
+
+
+
+
+
+
