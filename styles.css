@@ -1,18 +1,28 @@
 .container{
 	display: flex;
 	flex-direction: row;
-
 }
+
 .panel img{
-	border-radius: 30px;
+	border-radius: 60px;
+	
 }
 h3{
 	position: absolute;
-	color:white;
+	color: white;
 	margin: 25px;
-  
-  
+	white-space: nowrap;
+	margin-top: 100%;
 }
+.panel{
+	padding-right: 30px;
+	width: 20%;
+	height: auto;
+	
+}
+
+
+
 
 
 
