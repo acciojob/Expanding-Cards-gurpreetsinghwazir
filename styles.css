@@ -3,25 +3,32 @@
 	flex-direction: row;
 }
 
-@media screen and (max-width: 480px) {
-	h3{
+h3{
 	position: absolute;
 	color: white;
 	margin: 25px;
 	white-space: nowrap;
 	margin-top: 70%;
 }
-}
-
 
 .panel{
 	padding-right: 30px;
+	
 	/* width: 20%; */
+}
+
+.panel img:hover{
+	border-radius: 60px;
+	 width: 1000px;
+	height: 1000px;
+	transition: width 2s;
 }
 .panel img{
 	border-radius: 60px;
 	 width: 170px;
 	height: 800px;
+	transition: width 2s;
+
 }
 /* .panel{
 	flex-shrink:5;
