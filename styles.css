@@ -2,26 +2,31 @@
 	display: flex;
 	flex-direction: row;
 }
-
-.panel img{
-	border-radius: 60px;
-	
-}
 h3{
 	position: absolute;
 	color: white;
 	margin: 25px;
 	white-space: nowrap;
-	margin-top: 100%;
+	margin-top: 70%;
 }
 .panel{
 	padding-right: 30px;
-	width: 20%;
-	height: auto;
+	/* width: 20%; */
+}
+.panel img{
+	border-radius: 60px;
+	 width: 170px;
+	height: 800px;
+}
+/* .panel{
+	flex-shrink:5;
+} */
+
+.panel img:active{
+	width: 1000px;
+	height: 1000px;	
 	
 }
-
-
 
 
 
