@@ -11,35 +11,33 @@ h3{
 	margin-top: 55%;
 }
 
-.panel{
-	padding-right: 30px;
-	
-	/* width: 20%; */
-}
-
-.panel img:hover{
-	border-radius: 60px;
-	 width: 1000px;
-	height: 800px;
-	transition: width 2s;
-}
-.panel img{
-	border-radius: 60px;
-	 width: 170px;
-	height: 800px;
-	transition: width 2s;
-
-}
 /* .panel{
-	flex-shrink:5;
+	padding-right: 30px;
+	background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    cursor: pointer;
+    flex: 0.2;
+    margin:8px;
+    position: relative;
+    transition: all 0.7s ease-out;
+	
 } */
 
-.panel img:active{
-	width: 1000px;
-	height: 1000px;	
-	
+.panel img{
+	margin: 20px;
+	border-radius: 60px;
+	width: 170px;
+	height: 100vh;
+	transition: all 0.7s ease-out;
+
 }
 
+
+.panel .active{
+    flex: 3;
+}
 
 
 
