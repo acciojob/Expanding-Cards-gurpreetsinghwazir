@@ -1,43 +1,48 @@
+*{
+	box-sizing: border-box;
+}
 .container{
 	display: flex;
 	flex-direction: row;
-}
-
-h3{
-	position: absolute;
-	color: white;
-	margin: 25px;
-	white-space: nowrap;
-	margin-top: 55%;
-}
-
-/* .panel{
-	padding-right: 30px;
-	background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 80vh;
-    cursor: pointer;
-    flex: 0.2;
-    margin:8px;
-    position: relative;
-    transition: all 0.7s ease-out;
-	
-} */
-
-.panel img{
-	margin: 20px;
-	border-radius: 60px;
-	width: 170px;
 	height: 100vh;
-	transition: all 0.7s ease-out;
-
+	position: relative;
+}
+.panel{
+	text-wrap: nowrap;
+	
+}
+.hello{
+	margin: 15px;
+	border-radius:60px;
+	width: 150px;
+	height: 70vh;
+	flex: 0.5;
+	text-wrap: wrap;
+}
+.active{
+	flex: 5;
+    border-radius: 50px;
+	width: 50vh;
+	height: 70vh;
+	transition: linear 0.5s;
+	
+	
+	
+}
+h3.active{
+	opacity: 1;
+	color: red;
+	animation-delay: -2s;
+	position: absolute;
+    bottom: 8px;
+    left: 16px;
 }
 
-
-.panel .active{
-    flex: 3;
+h3{  
+	opacity: 0;
+	
 }
+
 
 
 
