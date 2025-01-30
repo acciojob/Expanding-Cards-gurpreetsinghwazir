@@ -1,20 +1,28 @@
-document.addEventListener('DOMContentLoaded', function() {
-   const sections = document.querySelectorAll('.hello');
-    const text = document.querySelectorAll('h3');
+let main = document.getElementsByClassName("panel"); // HTMLCollection
 
-    sections.forEach((section, index) => {
-        section.addEventListener('click', function(event) {
-            // Remove 'active' class from all other sections
-            sections.forEach((otherSection, otherIndex) => {
-                if (otherIndex !== index && otherSection.classList.contains('active')) {
-                    otherSection.classList.remove('active');
-                   // text[otherIndex].classList.remove('active'); // Remove 'active' class from corresponding text
-                }
-            });
-
-            // Toggle 'active' class on the clicked section
-           section.classList.toggle('active');
-          //  text[index].classList.toggle('active'); // Toggle 'active' class on corresponding text
-        });
+// Loop through each element in the collection
+for (let i = 0; i < main.length; i++) {
+    main[i].addEventListener("click", function() {
+        this.classList.toggle("active"); // Toggle class on the clicked element
+        console.log("Clicked panel " + i);
     });
-});
+}
+
+
+
+// 1 const panels document.querySelectorAll('.panel') 
+// 23456 3 
+// 7 
+// panels.forEach(panel => { 
+// panel.addEventListener('click', () => { 
+// removeActiveClasses() 
+// panel.classList.add('active') 
+// 8}) 
+// 9 
+// 10 function removeActiveClasses() { 
+// 11 
+// 12 
+// panel.forEach(panel => { 
+// 13 
+// panel.classList.remove('active') 
+// 14} 
